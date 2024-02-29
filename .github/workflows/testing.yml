@@ -21,7 +21,7 @@ jobs:
 
       - name: Commit and push
         run: |
-          git add .
-          git git commit -m "Automate changes"
+          add .
+          git commit -m "Automate changes"
           git push origin main
           echo "This is CICD"
