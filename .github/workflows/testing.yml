@@ -1,0 +1,27 @@
+name: RayyanTube
+
+on:
+  push:
+    branches: main
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "portgas.samer@gmail.com"
+          git config --global user.name "Abbro078"
+
+      - name: Commit and push
+        run: |
+          git add .
+          git git commit -m "Automate changes"
+          git push origin main
+          echo "This is CICD"
