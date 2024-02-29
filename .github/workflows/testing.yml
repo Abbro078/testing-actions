@@ -19,8 +19,8 @@ jobs:
           git config --global user.email "portgas.samer@gmail.com"
           git config --global user.name "Abbro078"
 
-      - name: Commit and push
+      - name: Push changes (if any)
         run: |
-          git commit -m "Automate changes" 
-          git push origin main
-          echo "This is CICD"
+          git add .  # Adds all modified and untracked files (optional)
+          git push origin main  # Implicitly commits staged changes
+          echo "Pushed changes (if any)"
