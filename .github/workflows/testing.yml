@@ -21,7 +21,6 @@ jobs:
 
       - name: Commit and push
         run: |
-          git add C:\Users\Samer\IdeaProjects\testing-actions\Testing.java
           git commit -m "Automate changes" 
           git push origin main
           echo "This is CICD"
