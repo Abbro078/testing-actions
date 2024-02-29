@@ -22,7 +22,7 @@ jobs:
       - name: Push changes (if any)
         run: |
           git add .
-          git commit -m "committing "
+          git commit -m "committing sdjkhdsfadshjk"
           git checkout main
           git push origin main  
           echo "Pushed changes (if any)"
