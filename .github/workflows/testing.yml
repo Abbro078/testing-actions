@@ -21,7 +21,8 @@ jobs:
 
       - name: Push changes (if any)
         run: |
-          git add .  # Adds all modified and untracked files (optional)
+          git add .
+          git commit -m "committing "
           git checkout main
-          git push origin main  # Implicitly commits staged changes
+          git push origin main  
           echo "Pushed changes (if any)"
